@@ -1,5 +1,3 @@
-![image](https://i.imgur.com/1cNMpvg.png)
-
 # HTML5 to RTMP streaming gateway proxy
 
 This project intends to allow an endpoint user to submit RTMP live video streaming directly using web browser and `getUserMedia`, without installing additional software. Currently, only Firefox with `MediaRecorder` API is supported.
@@ -47,7 +45,6 @@ openssl genrsa -out abels-key.pem 2048
 openssl req -new -sha256 -key  abels-key.pem -out abels-csr.pem
 openssl x509 -req -in abels-csr.pem -signkey abels-key.pem -out abels-cert.pem
 ```
-https://www.youtube.com/watch?v=O3iOWRugHbA
 
 and enjoy
 
