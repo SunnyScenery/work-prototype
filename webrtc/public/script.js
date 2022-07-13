@@ -1,9 +1,14 @@
-const socket = io('/')
+// const socket = io('127.0.0.1:3060')
+// const socket = io('/')
+const socket = io('localhost:3060')
 const videoGrid = document.getElementById('video-grid')
-const myPeer = new Peer(undefined, {
-    host: '/',
-    port: '3016'
-})
+// const myPeer = new Peer(undefined, {
+//     host: '/',
+//     port: '3016'
+// })
+// if you don't want to start your peerserver, could just use the default
+const myPeer = new Peer()
+
 const myVideo = document.createElement('video')
 myVideo.muted = true
 const peers = {}

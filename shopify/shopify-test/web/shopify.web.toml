@@ -1,0 +1,8 @@
+type="backend"
+
+[commands]
+dev = "npm run dev"
+
+# This file stores configurations for your Shopify app.
+
+scopes = "write_products,read_discounts"
